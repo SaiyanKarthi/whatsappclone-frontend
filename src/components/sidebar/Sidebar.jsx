@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react'
 import { useStateValue } from '../ContextApi/StateProvider'
 import "./sidebar.css"
 import {DonutLarge, MoreVert, SearchOutlined} from '@mui/icons-material'
-import Chat from '../Chat/Chat.jsx'
 import SidebarChat from '../SidebarChat/SidebarChat'
 import { initialState } from '../ContextApi/reducer'
 import axios from "axios";
@@ -42,11 +41,6 @@ const Sidebar = () => {
         <IconButton>
             <DonutLarge/>
        </IconButton>
-
-         {/* <IconButton>
-            <Chat/>
-       </IconButton> */}
-
          <IconButton>
             <MoreVert/>
        </IconButton>
